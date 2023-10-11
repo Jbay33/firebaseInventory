@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA2FEA212AD716A600177DE8 /* firebaseInventoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FEA202AD716A600177DE8 /* firebaseInventoryApp.swift */; };
+		CA2FEA232AD716A600177DE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FEA222AD716A600177DE8 /* ContentView.swift */; };
+		CA2FEA252AD716A700177DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2FEA242AD716A700177DE8 /* Assets.xcassets */; };
+		CA2FEA282AD716A700177DE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2FEA272AD716A700177DE8 /* Preview Assets.xcassets */; };
+		CA2FEA332AD716A700177DE8 /* firebaseInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FEA322AD716A700177DE8 /* firebaseInventoryTests.swift */; };
+		CA2FEA3D2AD716A700177DE8 /* firebaseInventoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FEA3C2AD716A700177DE8 /* firebaseInventoryUITests.swift */; };
+		CA2FEA3F2AD716A700177DE8 /* firebaseInventoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FEA3E2AD716A700177DE8 /* firebaseInventoryUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA2FEA2F2AD716A700177DE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2FEA152AD716A600177DE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2FEA1C2AD716A600177DE8;
+			remoteInfo = firebaseInventory;
+		};
+		CA2FEA392AD716A700177DE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2FEA152AD716A600177DE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2FEA1C2AD716A600177DE8;
+			remoteInfo = firebaseInventory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA2FEA1D2AD716A600177DE8 /* firebaseInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2FEA202AD716A600177DE8 /* firebaseInventoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseInventoryApp.swift; sourceTree = "<group>"; };
+		CA2FEA222AD716A600177DE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA2FEA242AD716A700177DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA2FEA272AD716A700177DE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA2FEA292AD716A700177DE8 /* firebaseInventory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = firebaseInventory.entitlements; sourceTree = "<group>"; };
+		CA2FEA2E2AD716A700177DE8 /* firebaseInventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firebaseInventoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2FEA322AD716A700177DE8 /* firebaseInventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseInventoryTests.swift; sourceTree = "<group>"; };
+		CA2FEA382AD716A700177DE8 /* firebaseInventoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firebaseInventoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2FEA3C2AD716A700177DE8 /* firebaseInventoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseInventoryUITests.swift; sourceTree = "<group>"; };
+		CA2FEA3E2AD716A700177DE8 /* firebaseInventoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseInventoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA2FEA1A2AD716A600177DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2FEA2B2AD716A700177DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2FEA352AD716A700177DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA2FEA142AD716A600177DE8 = {
+			isa = PBXGroup;
+			children = (
+				CA2FEA1F2AD716A600177DE8 /* firebaseInventory */,
+				CA2FEA312AD716A700177DE8 /* firebaseInventoryTests */,
+				CA2FEA3B2AD716A700177DE8 /* firebaseInventoryUITests */,
+				CA2FEA1E2AD716A600177DE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA2FEA1E2AD716A600177DE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FEA1D2AD716A600177DE8 /* firebaseInventory.app */,
+				CA2FEA2E2AD716A700177DE8 /* firebaseInventoryTests.xctest */,
+				CA2FEA382AD716A700177DE8 /* firebaseInventoryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA2FEA1F2AD716A600177DE8 /* firebaseInventory */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FEA202AD716A600177DE8 /* firebaseInventoryApp.swift */,
+				CA2FEA222AD716A600177DE8 /* ContentView.swift */,
+				CA2FEA242AD716A700177DE8 /* Assets.xcassets */,
+				CA2FEA292AD716A700177DE8 /* firebaseInventory.entitlements */,
+				CA2FEA262AD716A700177DE8 /* Preview Content */,
+			);
+			path = firebaseInventory;
+			sourceTree = "<group>";
+		};
+		CA2FEA262AD716A700177DE8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FEA272AD716A700177DE8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA2FEA312AD716A700177DE8 /* firebaseInventoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FEA322AD716A700177DE8 /* firebaseInventoryTests.swift */,
+			);
+			path = firebaseInventoryTests;
+			sourceTree = "<group>";
+		};
+		CA2FEA3B2AD716A700177DE8 /* firebaseInventoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FEA3C2AD716A700177DE8 /* firebaseInventoryUITests.swift */,
+				CA2FEA3E2AD716A700177DE8 /* firebaseInventoryUITestsLaunchTests.swift */,
+			);
+			path = firebaseInventoryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA2FEA1C2AD716A600177DE8 /* firebaseInventory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2FEA422AD716A700177DE8 /* Build configuration list for PBXNativeTarget "firebaseInventory" */;
+			buildPhases = (
+				CA2FEA192AD716A600177DE8 /* Sources */,
+				CA2FEA1A2AD716A600177DE8 /* Frameworks */,
+				CA2FEA1B2AD716A600177DE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = firebaseInventory;
+			productName = firebaseInventory;
+			productReference = CA2FEA1D2AD716A600177DE8 /* firebaseInventory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA2FEA2D2AD716A700177DE8 /* firebaseInventoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2FEA452AD716A700177DE8 /* Build configuration list for PBXNativeTarget "firebaseInventoryTests" */;
+			buildPhases = (
+				CA2FEA2A2AD716A700177DE8 /* Sources */,
+				CA2FEA2B2AD716A700177DE8 /* Frameworks */,
+				CA2FEA2C2AD716A700177DE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2FEA302AD716A700177DE8 /* PBXTargetDependency */,
+			);
+			name = firebaseInventoryTests;
+			productName = firebaseInventoryTests;
+			productReference = CA2FEA2E2AD716A700177DE8 /* firebaseInventoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA2FEA372AD716A700177DE8 /* firebaseInventoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2FEA482AD716A700177DE8 /* Build configuration list for PBXNativeTarget "firebaseInventoryUITests" */;
+			buildPhases = (
+				CA2FEA342AD716A700177DE8 /* Sources */,
+				CA2FEA352AD716A700177DE8 /* Frameworks */,
+				CA2FEA362AD716A700177DE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2FEA3A2AD716A700177DE8 /* PBXTargetDependency */,
+			);
+			name = firebaseInventoryUITests;
+			productName = firebaseInventoryUITests;
+			productReference = CA2FEA382AD716A700177DE8 /* firebaseInventoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA2FEA152AD716A600177DE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CA2FEA1C2AD716A600177DE8 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					CA2FEA2D2AD716A700177DE8 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CA2FEA1C2AD716A600177DE8;
+					};
+					CA2FEA372AD716A700177DE8 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CA2FEA1C2AD716A600177DE8;
+					};
+				};
+			};
+			buildConfigurationList = CA2FEA182AD716A600177DE8 /* Build configuration list for PBXProject "firebaseInventory" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA2FEA142AD716A600177DE8;
+			productRefGroup = CA2FEA1E2AD716A600177DE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA2FEA1C2AD716A600177DE8 /* firebaseInventory */,
+				CA2FEA2D2AD716A700177DE8 /* firebaseInventoryTests */,
+				CA2FEA372AD716A700177DE8 /* firebaseInventoryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA2FEA1B2AD716A600177DE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2FEA282AD716A700177DE8 /* Preview Assets.xcassets in Resources */,
+				CA2FEA252AD716A700177DE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2FEA2C2AD716A700177DE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2FEA362AD716A700177DE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA2FEA192AD716A600177DE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2FEA232AD716A600177DE8 /* ContentView.swift in Sources */,
+				CA2FEA212AD716A600177DE8 /* firebaseInventoryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2FEA2A2AD716A700177DE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2FEA332AD716A700177DE8 /* firebaseInventoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2FEA342AD716A700177DE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2FEA3F2AD716A700177DE8 /* firebaseInventoryUITestsLaunchTests.swift in Sources */,
+				CA2FEA3D2AD716A700177DE8 /* firebaseInventoryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA2FEA302AD716A700177DE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA2FEA1C2AD716A600177DE8 /* firebaseInventory */;
+			targetProxy = CA2FEA2F2AD716A700177DE8 /* PBXContainerItemProxy */;
+		};
+		CA2FEA3A2AD716A700177DE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA2FEA1C2AD716A600177DE8 /* firebaseInventory */;
+			targetProxy = CA2FEA392AD716A700177DE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA2FEA402AD716A700177DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA2FEA412AD716A700177DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CA2FEA432AD716A700177DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = firebaseInventory/firebaseInventory.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"firebaseInventory/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = justinBaylis.firebaseInventory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CA2FEA442AD716A700177DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = firebaseInventory/firebaseInventory.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"firebaseInventory/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = justinBaylis.firebaseInventory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CA2FEA462AD716A700177DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = justinBaylis.firebaseInventoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/firebaseInventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/firebaseInventory";
+			};
+			name = Debug;
+		};
+		CA2FEA472AD716A700177DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = justinBaylis.firebaseInventoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/firebaseInventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/firebaseInventory";
+			};
+			name = Release;
+		};
+		CA2FEA492AD716A700177DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = justinBaylis.firebaseInventoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = firebaseInventory;
+			};
+			name = Debug;
+		};
+		CA2FEA4A2AD716A700177DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = justinBaylis.firebaseInventoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = firebaseInventory;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA2FEA182AD716A600177DE8 /* Build configuration list for PBXProject "firebaseInventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2FEA402AD716A700177DE8 /* Debug */,
+				CA2FEA412AD716A700177DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2FEA422AD716A700177DE8 /* Build configuration list for PBXNativeTarget "firebaseInventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2FEA432AD716A700177DE8 /* Debug */,
+				CA2FEA442AD716A700177DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2FEA452AD716A700177DE8 /* Build configuration list for PBXNativeTarget "firebaseInventoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2FEA462AD716A700177DE8 /* Debug */,
+				CA2FEA472AD716A700177DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2FEA482AD716A700177DE8 /* Build configuration list for PBXNativeTarget "firebaseInventoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2FEA492AD716A700177DE8 /* Debug */,
+				CA2FEA4A2AD716A700177DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA2FEA152AD716A600177DE8 /* Project object */;
+}
