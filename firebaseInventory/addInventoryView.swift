@@ -95,6 +95,8 @@ struct addInventoryView: View {
                         milosHolyGrail = true
                         print("Inv add")
                         Savior.saveTouserDefaults(shirtArray: vm.arrayShirtColors)
+                        
+                        Savior.uploadToFirebase(shirtColor: ShirtColor(colorName: colorChoice,sizes: sizesArray))
                         dismiss()
                     }
                     Button("No", role:.cancel){ }
@@ -104,8 +106,10 @@ struct addInventoryView: View {
             }
         }.onAppear {
             colorList = vm.colorListInv()
+            colorChoice = vm.arrayShirtColors[0].colorName
             vm.loadFromUserDefaults()
         }
+        
     }
 }
 

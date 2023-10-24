@@ -7,7 +7,7 @@
 import SwiftUI
 import FirebaseCore
 import FirebaseFirestore
-import FirebaseAuth
+
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {

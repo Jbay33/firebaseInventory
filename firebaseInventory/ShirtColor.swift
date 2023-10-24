@@ -56,4 +56,30 @@ class ShirtColor:Codable {
         return shirt.colorName
     }
     
+    func toDictionaryValues() -> [String: Any]
+    {
+        //format
+        return [
+            "color": colorName,
+            "XXXL": sizes[0],
+            "XXL": sizes[1],
+            "XL": sizes[2],
+            "L": sizes[3],
+            "M": sizes[4],
+            "S": sizes[5]
+        ]
+    }
+    
+    init(data: [String: Any]) {
+        colorName = data["color"] as? String ?? ""
+        sizes = [0, 0, 0, 0, 0, 0]
+        sizes[0] = data["XXXL"] as? Int ?? 0
+        sizes[1] = data["XXL"] as? Int ?? 0
+        sizes[2] = data["XL"] as? Int ?? 0
+        sizes[3] = data["L"] as? Int ?? 0
+        sizes[4] = data["M"] as? Int ?? 0
+        sizes[5] = data["S"] as? Int ?? 0
+    }
+ 
+    
 }

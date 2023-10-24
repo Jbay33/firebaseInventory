@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 
 struct addNewColorsView: View {
@@ -32,6 +33,7 @@ struct addNewColorsView: View {
     
     
     var body: some View {
+        
         ZStack{
             GeometryReader { geometry in
                 
@@ -40,7 +42,7 @@ struct addNewColorsView: View {
                     .position(x:geometry.size.width/4,y:geometry.size.height/2)
                     .frame(width: 100)
                     .focused($focusedField, equals: .newColorName)
-                    
+                
                 TextField("XXXL", text: $XXXL)
                     .position(x:geometry.size.width*3/4,y:150)
                     .frame(width: 100)
@@ -74,10 +76,11 @@ struct addNewColorsView: View {
                         sizesArray.append(Int(S) ?? 0)
                         vm.arrayShirtColors.append(ShirtColor(colorName: newColorName, sizes: sizesArray))
                         Savior.saveTouserDefaults(shirtArray: vm.arrayShirtColors)
+                        Savior.uploadToFirebase(shirtColor: ShirtColor(colorName: newColorName, sizes: sizesArray))
                         dismiss()
                     }
                     Button("No", role:.cancel){ }
-
+                    
                 }.position(x:geometry.size.width/2,y:15)
                 
                 
@@ -85,7 +88,9 @@ struct addNewColorsView: View {
         }.onAppear{
             vm.loadFromUserDefaults()
         }
+        
     }
+    
 }
 
 struct addNewColorsView_Previews: PreviewProvider {

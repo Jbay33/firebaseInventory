@@ -8,12 +8,11 @@
 import SwiftUI
 import Combine
 
+
 struct inventoryList: View {
 //    public static var arrayShirtColors:[ShirtColor] = Savior.loadFromUserDefaults() ?? [ShirtColor(colorName: "Red", sizes: [0,0,0,0,0,0])]
     var arraySizeMan:Int
     @State var milosHolyGrail = ""
-    
-    
     
     var colorNames:Array<String>
     @EnvironmentObject var vm:inventoryViewModel
@@ -27,17 +26,17 @@ struct inventoryList: View {
             GeometryReader { geometry in
                 
                 //goggle Sheets
-                Button(){
-                    let _ = vm.toCSV_NOW()
+                NavigationLink(){
+                    //actually nothing
+                    loading()
                 } label: {
-                    Image(systemName: "sqaure.arrow.up")}
+                    Image(systemName: "square.and.arrow.up")}
                 .position(x:geometry.size.width/2+100,y:geometry.size.height/60+50)
                 
                 Button(){
-                    vm.arrayShirtColors.removeAll()
-                    Savior.saveTouserDefaults(shirtArray: vm.arrayShirtColors)
+                    vm.update()
                 } label: {
-                    Image(systemName: "square.arrow.down")}
+                    Image(systemName: "square.and.arrow.down")}
                 .position(x:geometry.size.width/2-100,y:geometry.size.height/60+50)
                 
                 
@@ -86,7 +85,7 @@ struct inventoryList: View {
                                     .frame(width: geometry.size.width, height: 200)
                                 
                                 //display info
-                                var sizesNum = sizesAmount(colorOfShirt: vm.arrayShirtColors[i])
+                                let sizesNum = sizesAmount(colorOfShirt: vm.arrayShirtColors[i])
                                 Text(name[i])
                                     .foregroundColor(.black)
                                     .position(x:geometry.size.width/3,y:100)
@@ -122,7 +121,7 @@ struct inventoryList: View {
             vm.loadFromUserDefaults()
 //            colorNames = vm.colorListInv()
 //            arraySizeMan = colorNames.count
-            print(vm.toCSV_NOW());
+//            print(vm.toCSV_NOW());
         }
         
     }

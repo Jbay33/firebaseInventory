@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import Firebase
 
 struct Savior{
     
+    static let db = Firestore.firestore()
     
     static func saveTouserDefaults(shirtArray: [ShirtColor]){
         do {
@@ -35,7 +37,18 @@ struct Savior{
         return nil
     }
     
-    
+    static func uploadToFirebase(shirtColor: ShirtColor){
+        
+        
+        
+        db.collection("Shirt Colors").document("\(shirtColor.colorName)").setData(shirtColor.toDictionaryValues()) {
+            err in
+            if let error = err {
+                print("ERROR saving data: \(error)")
+            }
+            print("Sucessfuly saved data")
+        }
+    }
     
     
 }

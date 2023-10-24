@@ -37,7 +37,7 @@ struct ContentView: View {
                     
                     NavigationLink {
                         
-                        if (password=="TDI"){
+                        if (password==""){
                             inventoryList(arraySizeMan: vm.colorListInv().count, colorNames: vm.colorListInv())
                             
                         }
@@ -54,7 +54,7 @@ struct ContentView: View {
                     }
                     .pickerStyle(.menu)
                     .position(x:geometry.size.width/3, y:(geometry.size.height/4))
-                    .frame(width: 170)
+                    .frame(width: 190)
                     
                     Picker("Size", selection: $sizeChoice) {
                         ForEach(sizesArray, id: \.self) {
@@ -64,7 +64,6 @@ struct ContentView: View {
                     .pickerStyle(.menu)
                     .position(x:geometry.size.width*2/3, y:(geometry.size.height/4))
                     .frame(width: 100)
-                    
                     
                     
                     
@@ -81,10 +80,13 @@ struct ContentView: View {
                     }.position(x:geometry.size.width/2,y:geometry.size.height*2/4)
                     
                 }
+            }.onAppear{
+                
             }
         }.onAppear {
             milosHolyGrail.toggle()
-            vm.loadFromUserDefaults()
+            colorChoice = vm.arrayShirtColors[0].colorName
+            
         }
     }
     
@@ -97,7 +99,6 @@ struct ContentView: View {
                 colorIndex=i
             }
         }
-        
         if (size=="XXXL"){
             vm.arrayShirtColors[colorIndex].sizes[0] -= 1
         }
@@ -120,7 +121,7 @@ struct ContentView: View {
         if (size=="S"){
             vm.arrayShirtColors[colorIndex].sizes[5] -= 1
         }
-         Savior.saveTouserDefaults(shirtArray: vm.arrayShirtColors)
+         Savior.uploadToFirebase(shirtColor: vm.arrayShirtColors[colorIndex])
     }
  
     
